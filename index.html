@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Common Concept</title>
+  </head>
+  <body>
+    <h1>Data Type</h1>
+    <p>Data types</p>
+    <ol>
+      <li>Primitive Data Type</li>
+      <li>Non Primitive Types</li>
+    </ol>
+
+    <h3>Primitive Data type</h3>
+    <p>Data type that takes single data are called Primitive Data type</p>
+    <ol>
+      <li>String</li>
+      <li>Number</li>
+      <li>Boolen</li>
+      <li>null</li>
+      <li>undefined</li>
+    </ol>
+    <br />
+    <h3>Non Primitive Data Type</h3>
+    <p>Data type that takes multiple data are called Non Primitive data type</p>
+    <ol>
+      <li>Object</li>
+      <li>Array</li>
+      <li>Function</li>
+      <li>Date</li>
+      <li>RegExp</li>
+    </ol>
+
+    <h3>Difference between Primitive & Non Primitive Data type</h3>
+    <figure style="margin-left: 0px" ;>
+      <img style="width: 700px" src="./images/js-dt-2.jpg" alt="" srcset="" />
+    </figure>
+    <p>See example in 1.script.js</p>
+    <br />
+    <h2>Under the hood how primitive data type works</h2>
+    <figure style="margin-left: 0px" ;>
+      <img style="width: 700px" src="./images/Primitive.jpg" alt="" srcset="" />
+    </figure>
+    <br />
+    <h2>Under the hood how Non-primitive data type works</h2>
+    <figure style="margin-left: 0px" ;>
+      <img
+        style="width: 700px"
+        src="./images/Non Primitive.jpg"
+        alt=""
+        srcset=""
+      />
+    </figure>
+    <br />
+    <h1>Difference between null and undefined</h1>
+    <p>
+      <u> <b>Null:</b> </u>
+    </p>
+    <p>
+      Null means it's empty i.e অস্তিত্ব আছে কিন্তু খালি। null যদি কোন variable
+      এ assign করা থাকে তাহলে পরবরতিতে সেটা change করা যায়।
+    </p>
+    <br />
+    <p>
+      <u> <b>Undefined:</b> </u>
+    </p>
+    <p>Undefined means it's not defined i.e. কোন অস্তিত্ব নাই।</p>
+    <h1>Truthy and falsy value</h1>
+    <p>see the ./1.script.js file</p>
+    <br />
+    <h1>(==) vs (===)</h1>
+    <p>see the ./1.script.js file</p>
+    <h1>Automatic type conversion</h1>
+    <p>
+      <a href="https://www.w3schools.com/js/js_type_conversion.asp"
+        >see w3school automatic type conversion</a
+      >
+    </p>
+    <p>
+      5 + null // returns 5 because null is converted to 0 <br />
+      "5" + null // returns "5null" because null is converted to "null" <br />
+      "5" + 2 // returns "52" because 2 is converted to "2" <br />
+      "5" - 2 // returns 3 because "5" is converted to 5 <br />
+      "5" * "2" // returns 10 because "5" and "2" are converted to 5 and 2
+    </p>
+    <h1>scope and hoisting</h1>
+    <p>My concept</p>
+    <h1>Closure</h1>
+    <script src="./1.script.js"></script>
+  </body>
+</html>
