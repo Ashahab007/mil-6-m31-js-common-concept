@@ -85,3 +85,32 @@ if (num3 === num4) {
 /* 
 Note: primitive data types are reference type so they cannot be compared because both num3 and num4 points different memory location and returns false. but if you assign num4 = num3 it will return true due to pointing same memory location.
 */
+
+// ! Closure
+// Inner function can access the variable from it's parent scope after outer function has been closed
+
+function counter() {
+  let counter = 0;
+  return function updateCount() {
+    counter++;
+    console.log(counter);
+  };
+}
+/* 
+Note: এখানে outer function counter কে call করার পর counter এর value 0 থাকে এবং একটা inner function updateCount() return করে এবং count নামের variable এ set করা হয়। এরপর count() দিয়ে পরবর্তী line এ inner function টাকে call করা হয়।
+*/
+let count = counter();
+count(); //1
+count(); //2
+count(); //3
+
+let count2 = counter();
+count2(); //1
+count2(); //2
+count2(); //3
+count2(); //4
+
+// but
+
+count(); //4
+// এখানে previous count() এর value টাও memory তে থেকে যায় i.e outer function close হয়ে যাওয়ার পরেও inner function টা outer function এর value টা মেমোরি করে রাখে। একেই closure বলে।
