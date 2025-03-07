@@ -55,7 +55,7 @@ function callName(name) {
 console.log(pname); //Firoz
 callName(pname);
 /* 
-Note: Primitive data types only passes the value to the function parameter that's why it doesn't change the main value after passing in the function parameter.
+Note: Primitive data types only passes the copy of the value to the function parameter that's why it doesn't change the main value after passing in the function parameter.
 */
 
 // pass by reference
