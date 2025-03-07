@@ -79,5 +79,5 @@ callTheName(myObj);
 console.log(myObj.name); //Rakib
 
 /* 
-Note: Non Primitive data types are passed by reference i.e variable are pointing the memory location. That's why when change the value in the function it will change the main value. 
+Note: Non Primitive data types are passed by reference i.e variable that are pointing the memory address. That's why when change the value in the function it will change the main value. 
 */
