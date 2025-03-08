@@ -13,10 +13,10 @@ const employee = {
 };
 
 let newEmployee = employee;
-console.log("Non-Primitive: ", newEmployee);
+console.log("Non-Primitive: ", newEmployee); //{name: 'Arham'}
 
 newEmployee.name = "Ammar"; //এখানে name change করার পর employee name টা update হয়ে যায় কারণ non-primitive data type হচ্ছে reference type যা reference memory টাকে point করে। এখানে newEmployee change করার সাথে সাথে ওই reference এর value টা change হয়ে জায়।
-console.log("Non-Primitive: ", newEmployee);
+console.log("Non-Primitive: ", newEmployee); //{name: 'Ammar'}
 
 // ! Truthy and falsy value
 /* Truthy value (evaluate to true) 
@@ -58,13 +58,13 @@ if (input) {
 
 // ! Double equal (==) vs Triple Equal (===)
 
-// an exceptional example
+// an exceptional example using ==
 
 let num1 = true;
 let num2 = 1;
 
 if (num1 == num2) {
-  console.log("This is equal value");
+  console.log("This is equal value"); //This is equal value
 } else {
   console.log("Noo this is not equal value");
 }
@@ -73,14 +73,14 @@ if (num1 == num2) {
 Note: এখানে (==) value check করে। তাই এখানে true কে 1 এ convert করে এবং 1==1 যা true return করে। So best practice is to check with ===।
 */
 
-// another exceptional example
+// another exceptional example using ===
 let num3 = [];
 let num4 = [];
 
 if (num3 === num4) {
   console.log("This is equal value");
 } else {
-  console.log("Noo this is not equal value");
+  console.log("Noo this is not equal value"); //Noo this is not equal value
 }
 /* 
 Note: primitive data types are reference type so they cannot be compared because both num3 and num4 points different memory location and returns false. but if you assign num4 = num3 it will return true due to pointing same memory location.
@@ -97,7 +97,7 @@ function counter() {
   };
 }
 /* 
-Note: এখানে outer function counter কে call করার পর counter এর value 0 থাকে এবং একটা inner function updateCount() return করে এবং count নামের variable এ set করা হয়। এরপর count() দিয়ে পরবর্তী line এ inner function টাকে call করা হয়।
+Note: এখানে outer function counter কে call করার পর counter এর value 0 থাকে এবং একটা inner function "updateCount()" return করে এবং count নামের variable এ set করা হয়। এরপর count() দিয়ে পরবর্তী line এ inner function টাকে call করা হয়।
 */
 let count = counter();
 count(); //1
