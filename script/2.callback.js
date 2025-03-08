@@ -79,13 +79,30 @@ callTheName(myObj);
 console.log(myObj.name); //Rakib
 
 /* 
-Note: Non Primitive data types are passed by reference i.e values  passed the memory address. That's why when change the value in the function it will change the main value. 
+Note: Non Primitive data types are passed by reference i.e values passed the memory address. That's why when change the value in the function it will change the main value. 
 */
 
-let sum1 = (p, q) => {
-  p + q;
-};
+//! Pre Increment, Pre Decrement, Post Increment & Post Decrement
 
-let re = sum1(5, 3);
+// post increment
+let increment = 0;
 
-console.log(re);
+console.log("Post Increment", increment++); //0 //এই line এ value টা বৃদ্ধি পাইসে কিন্তু console এ তা print না হয়ে পরের console এ increment value টা show হচ্ছে কারণ post increment current line এ increase করে পরের line এ show করে ।
+console.log("Post Increment", increment); //1
+
+// pre increment
+let preIncrement = 0;
+
+console.log("Pre Increment", ++preIncrement); //1 //pre increment এর ক্ষেত্রে increment টা current line এই হয়ে যায় তাই console এ সাথে সাথেই increment value টা show করে।
+
+// post decrement
+let postDecrement = 5;
+
+console.log("Post Decrement", postDecrement--); //5 same as post increment
+console.log("Post Decrement", postDecrement--); //4
+
+//pre decrement
+
+let preDecrement = 8;
+
+console.log("Pre Decrement", --preDecrement); //7 //same as pre increment
